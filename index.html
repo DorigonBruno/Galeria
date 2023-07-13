@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./style.css">
   <title>Galeria</title>
 </head>
 <body>
+  <h1>Galeria</h1>
+  <div class="container">
+    <div class="galeria-item">
+      <img class="galeria-imagem" data-src="./img/img-1.jpg" src="./img/img-1.jpg" alt="paisagem 1">
+    </div>
+    <div class="galeria-item">
+      <img class="galeria-imagem" data-src="./img/img-2.jpg" src="./img/img-2.jpg" alt="paisagem 1">
+    </div>
+    <div class="galeria-item">
+      <img class="galeria-imagem" data-src="./img/img-3.jpg" src="./img/img-3.jpg" alt="paisagem 1">
+    </div>
+    <div class="galeria-item">
+      <img class="galeria-imagem" data-src="./img/img-4.jpg" src="./img/img-4.jpg" alt="paisagem 1">
+    </div>
+  </div>
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <img class="lightbox-image" src="" alt="Imagem em destaque">
+    </div>
+    <a href="#" class="fechar"><i class="bi bi-x"></i></a>
+  </div>
   <script src="./script.js"></script>
 </body>
 </html>
