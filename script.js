@@ -1,16 +1,24 @@
-const imagens = document.querySelectorAll(".imagem-galeria");
-const lightBox = document.querySelector(".lightbox");
-const lightBoxImage = document.querySelector(".lightbox-image");
-const btnFechar = document.querySelector("a");
+function scriptCompleto() {
+  const imagens = document.querySelectorAll(".imagem-galeria");
+  const lightBox = document.querySelector(".lightbox");
+  const lightBoxImage = document.querySelector(".lightbox-image");
+  const btnFechar = document.querySelector("a");
 
-imagens.forEach((item) => {
-  item.addEventListener("click", ({ target }) => {
-    const url = target.src;
+  function handleClick(event) {
+    const url = event.currentTarget.src;
     lightBoxImage.setAttribute("src", url);
     lightBox.style.display = "flex";
-  });
-  btnFechar.addEventListener("click", (event) => {
+  }
+
+  function handleClose(event) {
     event.preventDefault();
     lightBox.style.display = "none";
+  }
+
+  imagens.forEach((item) => {
+    item.addEventListener("click", handleClick);
   });
-});
+
+  btnFechar.addEventListener("click", handleClose);
+}
+scriptCompleto();
