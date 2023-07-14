@@ -99,3 +99,31 @@ img {
   background: #fff;
   color: #000;
 }
+
+@media(max-width: 800px){
+  .lightbox-image {
+    max-width: 600px;
+    object-fit: cover;
+  }
+}
+
+@media(max-width: 600px){
+  .lightbox-image {
+    max-width: 450px;
+    object-fit: cover;
+  }
+}
+
+@media(max-width: 450px){
+  .lightbox-image {
+    max-width: 350px;
+    object-fit: cover;
+  }
+  .lista-imagens li img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    transition: 0.1s;
+    cursor: pointer;
+  }  
+}
