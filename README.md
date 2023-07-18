@@ -9,4 +9,5 @@ Projeto galeria feito para treinar HTML CSS e JavaScript, consiste em uma galeri
 - HTML 
 - CSS
 - JavaScript
-- Git e Github 
+- Git e Github
+- Boostrap icon
